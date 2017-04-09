@@ -10,18 +10,18 @@ library(leaflet)
 shinyServer(function(input, output) {
   
   library(readr)
-  k9datacsv <- read_csv("~/Documents/fll/k9/k9data.csv")
+  k9datacsv <- read_csv("./401k9/k9data.csv")
 
   output$mymap <- renderLeaflet({
     
       dogIcon <- makeIcon(
-        iconUrl = "~/Documents/fll/k9/guide-dog.png",
+        iconUrl = "./401k9/guide-dog.png",
         iconWidth = 36, iconHeight = 36,
         iconAnchorX = -7, iconAnchorY = 30
       )
       
       dogFace <- makeIcon(
-        iconUrl = "~/Documents/fll/k9/dog.png",
+        iconUrl = "./401k9/dog.png",
         iconWidth = 36, iconHeight = 36,
         iconAnchorX = -7, iconAnchorY = 30
       )
