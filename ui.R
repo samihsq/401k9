@@ -11,10 +11,10 @@ shinyUI(
   
   fluidPage(
     # Application title
-    headerPanel(strong("401K9 Project")),
-    headerPanel("California K9 Data"),
+    img(src="401k9-logo-black.png", align = "center", width= "50%", height = "50%" ),
     
-  
+    headerPanel("401K9 Project - California K9 Database"),
+    
     leafletOutput("mymap"),
     br(),
     br(),
